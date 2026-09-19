@@ -56,7 +56,7 @@ jobs:
       # ----------------------------------------------------------------------
       - name: Install Dependencies (Non-Native)
         # Установка ВСЕХ зависимостей (включая нативные, но без их сборки)
-        run: npm ci --ignore-scripts --unsafe-perm --timing --no-progress
+        run: npm install --ignore-scripts --unsafe-perm --timing --no-progress
         
       - name: Rebuild Native Modules (for Electron stability)
         # Использование официального инструмента electron-builder для корректной пересборки keytar
